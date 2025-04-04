@@ -3,38 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDD German Motors</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>GDD German Motors | Luxury German Cars</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to GDD German Motors</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="newvehicles.html">New Vehicles</a> |
-            <a href="preowned.html">Pre Owned Vehicles</a> |
-            <a href="parts.html">Parts</a> |
-            <a href="about.html">About</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="GDD German Motors" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new-vehicles.html">New Vehicles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pre-owned.html">Pre-Owned</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parts.html">Parts & Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Premium German Automotive Excellence</h1>
+                <p>Discover the finest selection of new and pre-owned German luxury vehicles</p>
+                <a href="new-vehicles.html" class="btn btn-primary">View Inventory</a>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <p>GDD German Motors is the best selling motor store in the world with lots of wonderful car brands in store</p>
-        <p>Discover our wide range of vehicles, from brand-new models to certified pre-owned cars!</p>
-        <p>Explore exclusive deals on quality parts and accessories for your car.</p>
-        <p>We got one the top highest performance cars.</p>
-        <img src="images/bmw-m4-cs-flyout.webp">
-        <p>Offroad are also available</p>
-        <img src="images/2025_ford_f-150_crew-cab-pickup_lariat_fq_oem_1_1600.avif">
-        <p>And  some royality and luxury is available in store.</p>
-        <img src="images/P90492179_highRes_bmw-i7-xdrive60-m-sp (1).jpg">
-        
-    </main>
+    <!-- Featured Vehicles -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Vehicles</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/car1.jpg" class="card-img-top" alt="BMW 7 Series">
+                        <div class="card-body">
+                            <h5 class="card-title">2023 BMW 7 Series</h5>
+                            <p class="card-text">Starting at $86,800</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="new-vehicles.html" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/car2.jpg" class="card-img-top" alt="Mercedes-Benz S-Class">
+                        <div class="card-body">
+                            <h5 class="card-title">2023 Mercedes-Benz S-Class</h5>
+                            <p class="card-text">Starting at $111,100</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="new-vehicles.html" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/car3.jpg" class="card-img-top" alt="Audi A8">
+                        <div class="card-body">
+                            <h5 class="card-title">2023 Audi A8</h5>
+                            <p class="card-text">Starting at $86,500</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="new-vehicles.html" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 GDD German Motors | All rights reserved.</p>
+    <!-- Why Choose Us -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose GDD German Motors</h2>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-certificate fa-3x mb-3 text-primary"></i>
+                    <h4>Certified Pre-Owned</h4>
+                    <p>Rigorous inspection process with extended warranty</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-cogs fa-3x mb-3 text-primary"></i>
+                    <h4>Expert Service</h4>
+                    <p>Factory-trained technicians using genuine parts</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-handshake fa-3x mb-3 text-primary"></i>
+                    <h4>Premium Experience</h4>
+                    <p>Personalized service from our knowledgeable staff</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>GDD German Motors</h5>
+                    <p>Premium German automotive excellence since 2005.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="new-vehicles.html" class="text-white">New Vehicles</a></li>
+                        <li><a href="pre-owned.html" class="text-white">Pre-Owned</a></li>
+                        <li><a href="parts.html" class="text-white">Parts & Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        123 Luxury Avenue<br>
+                        Beverly Hills, CA 90210<br>
+                        <i class="fas fa-phone"></i> (555) 123-4567<br>
+                        <i class="fas fa-envelope"></i> info@gddgermanmotors.com
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 GDD German Motors | All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
+
+  
 
