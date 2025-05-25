@@ -3,28 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre Owned</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Pre-Owned Vehicles - GDD Motors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Pre Owned</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="newvehicles.html">New Vehicles</a> |
-            <a href="preowned.html">Pre Owned Vehicles</a> |
-            <a href="parts.html">Parts</a> |
-            <a href="about.html">About</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="container header-container">
+            <a href="index.html" class="logo">GDD <span>Motors</span></a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new-vehicles.html">New Vehicles</a></li>
+                    <li><a href="pre-owned.html" class="active">Pre-Owned</a></li>
+                    <li><a href="parts.html">Parts & Accessories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <p></a>.</p>
-    </main>
+    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/used-cars-bg.jpg');">
+        <div class="container">
+            <h1>Quality Pre-Owned Vehicles</h1>
+            <p>Certified pre-owned vehicles with warranty options at unbeatable prices.</p>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 2rem 0;">
+        <div style="display: flex; gap: 1rem; margin-bottom: 2rem; overflow-x: auto; padding: 0.5rem 0;">
+            <button class="filter-btn active" data-filter="all">All Vehicles</button>
+            <button class="filter-btn" data-filter="certified">Certified</button>
+            <button class="filter-btn" data-filter="suv">SUVs</button>
+            <button class="filter-btn" data-filter="sedan">Sedans</button>
+            <button class="filter-btn" data-filter="budget">Under $20K</button>
+        </div>
+
+        <div class="vehicle-grid">
+            <div class="vehicle-card" data-type="certified suv">
+                <img src="images/used-suv.jpg" alt="Certified Pre-Owned SUV" class="vehicle-img">
+                <div class="vehicle-info">
+                    <h3>2020 Luxury SUV</h3>
+                    <div class="price">$32,999</div>
+                    <div class="details">
+                        <span><i class="fas fa-gas-pump"></i> Premium</span>
+                        <span><i class="fas fa-tachometer-alt"></i> 28,000 mi</span>
+                    </div>
+                    <div style="color: green; font-weight: bold; margin: 0.5rem 0;">
+                        <i class="fas fa-check-circle"></i> Certified Pre-Owned
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="vehicle-card" data-type="sedan">
+                <img src="images/used-sedan.jpg" alt="2019 Family Sedan" class="vehicle-img">
+                <div class="vehicle-info">
+                    <h3>2019 Family Sedan</h3>
+                    <div class="price">$18,500</div>
+                    <div class="details">
+                        <span><i class="fas fa-gas-pump"></i> Regular</span>
+                        <span><i class="fas fa-tachometer-alt"></i> 35,000 mi</span>
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="vehicle-card" data-type="certified sedan">
+                <img src="images/used-sedan2.jpg" alt="2021 Premium Sedan" class="vehicle-img">
+                <div class="vehicle-info">
+                    <h3>2021 Premium Sedan</h3>
+                    <div class="price">$26,750</div>
+                    <div class="details">
+                        <span><i class="fas fa-gas-pump"></i> Premium</span>
+                        <span><i class="fas fa-tachometer-alt"></i> 22,500 mi</span>
+                    </div>
+                    <div style="color: green; font-weight: bold; margin: 0.5rem 0;">
+                        <i class="fas fa-check-circle"></i> Certified Pre-Owned
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="vehicle-card" data-type="budget suv">
+                <img src="images/used-suv2.jpg" alt="2018 Compact SUV" class="vehicle-img">
+                <div class="vehicle-info">
+                    <h3>2018 Compact SUV</h3>
+                    <div class="price">$19,900</div>
+                    <div class="details">
+                        <span><i class="fas fa-gas-pump"></i> Regular</span>
+                        <span><i class="fas fa-tachometer-alt"></i> 42,000 mi</span>
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 3rem 0; text-align: center; background-color: #f5f5f5; margin: 2rem 0; border-radius: 8px;">
+        <h2 style="margin-bottom: 1rem; color: #1a3e72;">Trade-In Your Vehicle</h2>
+        <p style="max-width: 700px; margin: 0 auto 2rem;">Get a fair value estimate for your current vehicle and apply it toward your next purchase.</p>
+        <a href="contact.html" class="btn">Get Trade-In Estimate</a>
+    </section>
 
     <footer>
-          <p>&copy; 2025 GDD German Motors | All rights reserved.</p>
+        <!-- Same footer as index.html -->
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
